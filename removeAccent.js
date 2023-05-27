@@ -1,5 +1,6 @@
 function removeAccent(str) {
-    // Add your solution here!
+    var regex = /[^a-z0-9]/gi;
+    return str.replace(regex, "");
 }
 
 module.exports = removeAccent;
